@@ -21,7 +21,7 @@ ol, ul {
 	list-style: none;
 }
 
-/* End reset, begin global styles. Media queries mobile-first*/
+/* End reset, begin global styles. */
 
 html {
   font-size: 62.5%;
@@ -51,6 +51,28 @@ p {
   font-size: 1.6rem;
   padding-bottom: 8px;
   color: #989a9c
+}
+	
+a { 
+  font-size: inherit;
+  color: #64acdc;
+  text-decoration: none;
+}
+
+a:link {
+  color: #64acdc;
+}
+
+a:visited {
+  color: #64acdc;
+}
+
+a:hover {
+  color: #406a87
+}
+
+a:active {
+  color: #64acdc;
 }
 
 /* End global styles, begin page styles */
@@ -131,4 +153,27 @@ p {
 .list-header {
   display: flex;
   flex-flow: column nowrap;
+}
+
+/* Responsive adjustments for desktop width ( > 768 px viewport) */
+
+@media only screen and (min-width: 768px) {
+  .list-data {
+    margin-left: 24px;
+    margin-bottom: 28px;
+  }
+
+	.list-header {
+    flex-flow: row-reverse nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .list-header h3 {
+    margin-left: 14px;
+  }
+
+  .list-data p {
+    max-width: 85%;
+  }
 }
