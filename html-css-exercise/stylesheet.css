@@ -1,3 +1,134 @@
+/* CSS Reset */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, 
+p, a, img, ol, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* End reset, begin global styles. Media queries mobile-first*/
+
+html {
+  font-size: 62.5%;
+}
+
+html, body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.6rem;
+  padding-bottom: 8px;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 8px;
+  color: #989a9c
+}
+
+/* End global styles, begin page styles */
+
+/* Flex display and positioning of container elements  */
 .activity-feed {
-  
+  width: 100%;
+  padding: 14px;
+}
+
+.activty-feed ul {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.activity-feed li {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+/* Style list stepper along left margin */
+
+.list-stepper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.stepper-number {
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.stepper-number.item-one {
+  background-color: #26b894;
+}
+.stepper-number.item-two {
+  background-color: #f29d26;
+}
+
+.stepper-number.item-three {
+  background-color: #e54c3b;
+}
+
+.stepper-number p {
+  padding: 0px;
+  margin: auto;
+  color: white;
+  font-size: 2.0rem;
+  text-align: center;
+  vertical-align: center;
+}
+
+.stepper-line {
+  width: 2px;
+  height: 100%;
+  margin: 8px;
+  background-color: lightgray;
+}
+
+/* Style list item data */
+
+.list-data {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 14px;
+  margin-left: 8px;
+  margin-bottom: 14px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.list-header {
+  display: flex;
+  flex-flow: column nowrap;
 }
