@@ -1,0 +1,48 @@
+[
+  {
+    "model": "referral.page",
+    "pk": 1,
+    "fields": {
+      "name": "Tim's Groundbreaking Website",
+      "owner": "Tim Berners-Lee",
+      "created_at": "2020-04-05 22:08:26.331027",
+      "last_modified": "2020-04-05 22:08:26.331027"
+    }
+  },
+  {
+    "model": "referral.referrer",
+    "pk": 1,
+    "fields": {
+      "name": "Louis' Blog",
+      "link": "louis",
+      "count": 0,
+      "page_id": 1,
+      "created_at": "2020-04-05 22:08:26.331027",
+      "last_modified": "2020-04-05 22:08:26.331027"
+    }
+  },
+  {
+    "model": "referral.referrer",
+    "pk": 2,
+    "fields": {
+      "name": "Fun Bus Agency",
+      "link": "funbus",
+      "count": 0,
+      "page_id": 1,
+      "created_at": "2020-04-05 22:08:26.331027",
+      "last_modified": "2020-04-05 22:08:26.331027"
+    }
+  },
+  {
+    "model": "referral.referrer",
+    "pk": 3,
+    "fields": {
+      "name": "Miley Cyrus Fanpage",
+      "link": "miley",
+      "count": 0,
+      "page_id": 1,
+      "created_at": "2020-04-05 22:08:26.331027",
+      "last_modified": "2020-04-05 22:08:26.331027"
+    }
+  }
+]
