@@ -9,6 +9,7 @@ class Page(models.Model):
 
 class Referrer(models.Model):
     name = models.CharField(max_length=50, default="Referrer name")
+    link = models.CharField(max_length=50, unique=True)
     count = models.IntegerField(default=0)
     page = models.ForeignKey(
         'Page',
